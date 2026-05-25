@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SLATE: Spectral-Lyapunov Annealed Training Estimator"
+authors:
+  - family-names: "Mugenzi"
+    given-names: "Rene Claudel"
+    email: "rene.mugenzi@physivitis.tech"
+    affiliation: "Physivitis Ltd"
+version: "0.1.0"
+date-released: 2026-05-26
+url: "https://github.com/physivitis/slate"
+repository-code: "https://github.com/physivitis/slate"
+license: MIT
+keywords:
+  - sparse attention
+  - spectral normalisation
+  - Lyapunov stability
+  - language model training
+  - AI safety
+  - verified AI
+  - information monotonicity
+abstract: >
+  SLATE extends Native Sparse Attention (NSA) with three mathematical
+  innovations to provide provable training stability: a spectrally-
+  constrained compression operator with information-monotonicity
+  guarantee, Fisher-information weighted token selection, and a
+  Lyapunov-derived annealing schedule with bifurcation guard. The
+  spectral constraint and combined system are fully validated at toy
+  scale. UK Patent Application GB2612127.7.

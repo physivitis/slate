@@ -1,0 +1,27 @@
+{
+  "test": "information_monotonicity_patent_claim_17_part_b",
+  "patent_ref": "GB2612127.7",
+  "date": "2026-05-24",
+  "model": "C3_strict_architecture_with_SVD_projection",
+  "model_parameters": 1850000,
+  "n_compression_layers_tested": 16,
+  "batch_size": 64,
+  "sequence_length": 256,
+  "max_sigma_1": 1.000077,
+  "constraint_enforced": true,
+  "estimators": {
+    "gaussian": {
+      "type": "parametric_per_dim",
+      "mean_delta_H_nats": -0.55,
+      "violations": 0,
+      "status": "VALIDATED"
+    },
+    "spectral": {
+      "type": "non_parametric_svd",
+      "mean_delta_H_nats": -1.78,
+      "violations": 0,
+      "status": "VALIDATED"
+    }
+  },
+  "overall_status": "FULLY_VALIDATED"
+}
