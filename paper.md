@@ -5,7 +5,7 @@ Physivitis Ltd, London, United Kingdom
 rene.mugenzi@physivitis.tech
 
 **Version 0.1, 26 May 2026**
-**UK Patent Application: GB2612127.7 (filed 24 May 2026)**
+**UK Patent Application: GB2612127.7 **
 
 ## Abstract
 
