@@ -87,7 +87,7 @@ If you use SLATE, please cite:
 
 ## Patent status
 
-The SLATE framework is the subject of UK Patent Application **GB2612127.7**, filed 24 May 2026 by Physivitis Ltd, inventor Rene Claudel Mugenzi.
+The SLATE framework is the subject of UK Patent Application **GB2612127.7**, by Physivitis Ltd, inventor Rene Claudel Mugenzi.
 
 This code is released under the MIT licence for research and commercial use. The patent grants Physivitis Ltd defensive priority over the underlying methods.
 
