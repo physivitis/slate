@@ -23,7 +23,7 @@ These guarantees matter for AI safety, verified AI, and deployment in regulated 
 ## What SLATE does NOT provide
 
 - It does **not** make training **faster** than NSA. SLATE adds guarantees on top of NSA's existing efficiency.
-- Innovation 2 (Fisher selection) is **not** currently implemented in working code. It is specified in the paper and patent; validation is deferred.
+- Innovation 2 (Fisher selection) is not yet validated for advantage at scale and is not yet integrated into the main training loop. A stable standalone prototype exists.
 - All current validation is at **toy scale** (1.85M parameters, Shakespeare, 256-token sequences). Production-scale validation is planned but not done.
 
 ## Quick start
