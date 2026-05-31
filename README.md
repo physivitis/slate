@@ -4,12 +4,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Patent: GB2612127.7](https://img.shields.io/badge/Patent-GB2612127.7-blue.svg)](https://www.gov.uk/search-for-patent)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20379184.svg)](https://doi.org/10.5281/zenodo.20379184)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20379184-blue)](https://doi.org/10.5281/zenodo.20379184)
 
 SLATE extends [DeepSeek's Native Sparse Attention (NSA)](https://arxiv.org/abs/2502.11089) with three mathematical innovations that give training compressed-attention language models **provable stability guarantees** rather than the empirical stability assumed by current methods.
 
 - **Innovation 1**: Lyapunov-derived annealing schedule with bifurcation guard *(mechanism demonstrated)*
-- **Innovation 2**: has a working prototype that is numerically stable, but its sample-efficiency advantage is not yet validated at scale.*
+- **Innovation 2**: (Fisher selection) has a stable prototype but is not yet validated for advantage at scale, and is not yet integrated into the main training loop (it requires a fork of NSA's selection logic)*
 - **Innovation 3**: Spectrally-constrained compression operator with information-monotonicity guarantee **(fully validated)**
 
 ## What SLATE provides that NSA does not
