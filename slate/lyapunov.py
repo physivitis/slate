@@ -32,19 +32,20 @@ def stochastic_eigenvalue(model, batch, loss_fn):
     """
     x, y = batch
     loss = loss_fn(model, x, y)
-    grads = torch.autograd.grad(loss, model.parameters(), create_graph=True)
+    params = [p for p in model.parameters() if p.requires_grad]
+    grads = torch.autograd.grad(loss, params, create_graph=True)
     flat_grad = torch.cat([g.flatten() for g in grads])
     v = torch.randn_like(flat_grad)
     v = v / v.norm()
-    splits = [g.numel() for g in grads]
-    Hv_grads = torch.autograd.grad(
-        flat_grad, model.parameters(),
-        grad_outputs=v.reshape(-1).split(splits),
-        retain_graph=False, allow_unused=True)
+    # Pearlmutter trick: Hv = d/dtheta (grad . v). Form the scalar (grad . v)
+    # then differentiate w.r.t. params. This avoids grad_outputs shape issues.
+    gv = (flat_grad * v).sum()
+    Hv_grads = torch.autograd.grad(gv, params, retain_graph=False, allow_unused=True)
     Hv = torch.cat([
-        h.flatten() if h is not None else torch.zeros_like(g.flatten())
-        for h, g in zip(Hv_grads, grads)
+        h.flatten() if h is not None else torch.zeros_like(p.flatten())
+        for h, p in zip(Hv_grads, params)
     ])
+    # Rayleigh quotient v^T H v (v is unit norm so denominator is 1)
     return (v * Hv).sum().item()
 
 

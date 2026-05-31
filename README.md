@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Patent: GB2612127.7](https://img.shields.io/badge/Patent-GB2612127.7-blue.svg)](https://www.gov.uk/search-for-patent)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20379184.svg)](https://doi.org/10.5281/zenodo.20379184)
 
 SLATE extends [DeepSeek's Native Sparse Attention (NSA)](https://arxiv.org/abs/2502.11089) with three mathematical innovations that give training compressed-attention language models **provable stability guarantees** rather than the empirical stability assumed by current methods.
 
@@ -81,13 +82,14 @@ If you use SLATE, please cite:
   year         = {2026},
   publisher    = {Physivitis Ltd},
   url          = {https://github.com/physivitis/slate},
+  doi          = {10.5281/zenodo.20379184},
   note         = {UK Patent Application GB2612127.7}
 }
 ```
 
 ## Patent status
 
-The SLATE framework is the subject of UK Patent Application **GB2612127.7**, by Physivitis Ltd, inventor Rene Claudel Mugenzi.
+The SLATE framework is the subject of UK Patent Application **GB2612127.7**, filed 24 May 2026 by Physivitis Ltd, inventor Rene Claudel Mugenzi.
 
 This code is released under the MIT licence for research and commercial use. The patent grants Physivitis Ltd defensive priority over the underlying methods.
 

@@ -11,6 +11,11 @@ date-released: 2026-05-26
 url: "https://github.com/physivitis/slate"
 repository-code: "https://github.com/physivitis/slate"
 license: MIT
+doi: 10.5281/zenodo.20379184
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20379184
+    description: Zenodo archive of v0.1.0
 keywords:
   - sparse attention
   - spectral normalisation
